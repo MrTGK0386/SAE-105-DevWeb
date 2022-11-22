@@ -32,6 +32,20 @@ body{
     max-width: 100%;
 }
 
+#millieu > #test {
+    top: 20%;
+    right: 20%;
+    width: 300px;
+    height: 300px;
+}
+
+.hide {
+    background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
 #interface {
     background: crimson;
     border-top: black;
