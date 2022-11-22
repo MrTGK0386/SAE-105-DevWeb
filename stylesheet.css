@@ -7,14 +7,13 @@ body{
 
 }
 .parent {
-    min-height: 50vh;
+    min-height: 73vh;
     display: flex;
     align-items: center;
     justify-content: center;
     width: inherit;
     background: aqua;
     padding: 0;
-
 }
 
 .contained {
@@ -22,16 +21,20 @@ body{
     min-width:25%;
     min-height: inherit;
     background: yellow;
-
 }
 
 #millieu {
     min-width: 50%;
 }
 
+#millieu > img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
 #interface {
     background: crimson;
     border-top: black;
-    min-height: 50vh;
+    min-height: 27vh;
     width: inherit;
 }
