@@ -34,27 +34,12 @@ body{
     max-width: 100%;
 }
 
-#etienne {
-    position: absolute;
-}
-
-#fabio {
-    position: absolute;
-}
-
-#julien {
-    position: absolute;
-}
-
-#nathan {
-    position: absolute;
-}
-
 #interface > p {
     text-align: center;
 }
 
 .hide {
+    position: absolute;
     background: red;
     border: 0;
     margin: 0;
