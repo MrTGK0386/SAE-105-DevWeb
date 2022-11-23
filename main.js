@@ -1,4 +1,3 @@
-const Image = document.getElementById("image").getAttribute("src");
 const INFO = document.getElementById("interface");
 const SCREEN = document.getElementById("millieu");
 
@@ -22,19 +21,19 @@ function goNext(p) {
                 "<style>\n" +
                 "    #etienne {\n" +
                 "    top: 92%;\n" +
-                "    right: 0%;\n" +
+                "    right: 0;\n" +
                 "    width: 100%;\n" +
                 "    height: 50px;\n" +
                 "    }\n" +
                 "    #fabio {\n" +
-                "        top: 0%;\n" +
-                "        right: 0%;\n" +
+                "        top: 0;\n" +
+                "        right: 0;\n" +
                 "        width: 350px;\n" +
                 "        height: 92%;\n" +
                 "    }\n" +
                 "    #julien {\n" +
-                "        top: 0%;\n" +
-                "        left: 0%;\n" +
+                "        top: 0;\n" +
+                "        left: 0;\n" +
                 "        width: 350px;\n" +
                 "        height: 92%;\n" +
                 "    }\n" +
@@ -133,19 +132,19 @@ function goNext(p) {
                 "<style>\n" +
                 "    #etienne {\n" +
                 "    top: 92%;\n" +
-                "    right: 0%;\n" +
+                "    right: 0;\n" +
                 "    width: 100%;\n" +
                 "    height: 50px;\n" +
                 "    }\n" +
                 "    #fabio {\n" +
-                "        top: 0%;\n" +
-                "        right: 0%;\n" +
+                "        top: 0;\n" +
+                "        right: 0;\n" +
                 "        width: 350px;\n" +
                 "        height: 92%;\n" +
                 "    }\n" +
                 "    #julien {\n" +
-                "        top: 0%;\n" +
-                "        left: 0%;\n" +
+                "        top: 0;\n" +
+                "        left: 0;\n" +
                 "        width: 350px;\n" +
                 "        height: 92%;\n" +
                 "    }\n" +
