@@ -25,21 +25,21 @@ function goNext(p) {
                 "<style>\n" +
                 "    #etienne {\n" +
                 "    top: 92%;\n" +
-                "    right: 100%;\n" +
+                "    right: 0%;\n" +
                 "    width: 100%;\n" +
                 "    height: 50px;\n" +
                 "    }\n" +
                 "    #fabio {\n" +
-                "        top: %;\n" +
-                "        left: 20%;\n" +
-                "        width: 100px;\n" +
-                "        height: 100px;\n" +
+                "        top: 0%;\n" +
+                "        right: 0%;\n" +
+                "        width: 350px;\n" +
+                "        height: 92%;\n" +
                 "    }\n" +
                 "    #julien {\n" +
-                "        top: 30%;\n" +
-                "        left: 20%;\n" +
-                "        width: 100px;\n" +
-                "        height: 100px;\n" +
+                "        top: 0%;\n" +
+                "        left: 0%;\n" +
+                "        width: 350px;\n" +
+                "        height: 92%;\n" +
                 "    }\n" +
                 "</style>";
         } else {
