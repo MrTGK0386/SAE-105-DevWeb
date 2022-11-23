@@ -13,7 +13,7 @@ function goNext(){
             "    <p>Entrez vite n'ayez pas peur</p>\n" +
             "    <style>\n" +
             "      p {\n" +
-            "        position: center;\n" +
+            "        text-align: center;\n" +
             "        color: aqua;\n" +
             "      }\n" +
             "    </style>"
