@@ -34,7 +34,7 @@ body{
     max-width: 100%;
 }
 
-#millieu > #etienne {
+#etienne {
     position: absolute;
     top: 20%;
     right: 20%;
@@ -58,16 +58,4 @@ body{
     border-top: black;
     min-height: 27vh;
     width: inherit;
-}
-
-#stock {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-    margin: 0;
-    border: 0;
-    padding: 0;
-
-    
-    
 }
