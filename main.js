@@ -12,12 +12,7 @@ function goNext(p) {
     if (Image == "Photos/FrontIUT.jpg") {
         if (p == 1) {
             INFO.innerHTML = "<p>Bienvenue dans le hall de l'IUT !</p>\n" +
-                "<p>Cet endroit est le lieu ou les élèves se rassemblent entre les pauses</p>\n" +
-                "<style>\n" +
-                "    p {\n" +
-                "        position: center;\n" +
-                "      }\n" +
-                "</style>";
+                "<p>Cet endroit est le lieu ou les élèves se rassemblent entre les pauses</p>\n"
             SCREEN.innerHTML = "<img src=\"Photos/hall-global.jpg\" id=\"image\" alt=\"hall d'entré de l'IUT\">\n" +
                 "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
                 "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -43,8 +38,7 @@ function goNext(p) {
                 "    }\n" +
                 "</style>";
         } else {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+            INFO.innerHTML = "<p>ENTREZ PAR LA BONNE PORTE !!! >:(</p>";
         }
     } else if (Image == "Photos/hallglobal.jpg") {
         if (p == 1) {
