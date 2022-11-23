@@ -60,6 +60,9 @@ body{
     margin: 0;
     padding: 0;
 }
+.hide:hover {
+    cursor: url(Utility/cursor.png),wait
+}
 
 #interface {
     background: #b8b8b8;
