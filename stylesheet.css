@@ -36,18 +36,18 @@ body{
 
 #etienne {
     position: absolute;
-    top: 70%;
-    right: 45%;
-    width: 150px;
-    height: 150px;
 }
 
 #fabio {
     position: absolute;
-    top: 71%;
-    left: 16%;
-    width: 150px;
-    height: 150px;
+}
+
+#julien {
+    position: absolute;
+}
+
+#nathan {
+    position: absolute;
 }
 
 #interface > p {

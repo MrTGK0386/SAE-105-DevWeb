@@ -8,10 +8,40 @@ function goBack(){
 }
 
 function goNext(p) {
+    console.log(p)
     if (Image == "Photos/FrontIUT.jpg") {
         if (p == 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+            INFO.innerHTML = "<p>Bienvenue dans le hall de l'IUT !</p>\n" +
+                "<p>Cet endroit est le lieu ou les élèves se rassemblent entre les pauses</p>\n" +
+                "<style>\n" +
+                "    p {\n" +
+                "        position: center;\n" +
+                "      }\n" +
+                "</style>";
+            SCREEN.innerHTML = "<img src=\"Photos/hall-global.jpg\" id=\"image\" alt=\"hall d'entré de l'IUT\">\n" +
+                "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
+                "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
+                "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
+                "<style>\n" +
+                "    #etienne {\n" +
+                "    top: 92%;\n" +
+                "    right: 100%;\n" +
+                "    width: 100%;\n" +
+                "    height: 50px;\n" +
+                "    }\n" +
+                "    #fabio {\n" +
+                "        top: %;\n" +
+                "        left: 20%;\n" +
+                "        width: 100px;\n" +
+                "        height: 100px;\n" +
+                "    }\n" +
+                "    #julien {\n" +
+                "        top: 30%;\n" +
+                "        left: 20%;\n" +
+                "        width: 100px;\n" +
+                "        height: 100px;\n" +
+                "    }\n" +
+                "</style>";
         } else {
             INFO.innerHTML = "";
             SCREEN.innerHTML = "";
