@@ -3,7 +3,8 @@ html{
 }
 body{
     width: inherit;
-    min-height:100%
+    min-height:100%;
+    @import "";
 
 }
 .parent {
@@ -12,7 +13,6 @@ body{
     align-items: center;
     justify-content: center;
     width: inherit;
-    background: aqua;
     padding: 0;
 }
 
@@ -20,7 +20,7 @@ body{
     margin: 0;
     min-width:25%;
     min-height: inherit;
-    background: yellow;
+    background: #b8b8b8;
 }
 
 #millieu {
@@ -62,7 +62,7 @@ body{
 }
 
 #interface {
-    background: crimson;
+    background: #b8b8b8;
     border-top: black;
     min-height: 27vh;
     width: inherit;
