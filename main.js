@@ -120,4 +120,19 @@ function goNext(p) {
                 SCREEN.innerHTML = "";
             }
         }
+    else if (Image == "Photos/void.jpg") {
+        if (p == 1) {
+            INFO.innerHTML = "";
+            SCREEN.innerHTML = "";
+        } else if (p == 2) {
+            INFO.innerHTML = "";
+            SCREEN.innerHTML = "";
+        } else if (p == 3) {
+            INFO.innerHTML = "";
+            SCREEN.innerHTML = "";
+        } else {
+            INFO.innerHTML = "";
+            SCREEN.innerHTML = "";
+        }
+    }
 }
