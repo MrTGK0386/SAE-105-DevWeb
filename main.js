@@ -8,7 +8,6 @@ function goBack(){
 }
 
 function goNext(p) {
-    console.log(p)
     if (Image == "Photos/FrontIUT.jpg") {
         if (p == 1) {
             INFO.innerHTML = "<p>Bienvenue dans le hall de l'IUT !</p>\n" +
@@ -144,19 +143,28 @@ function goNext(p) {
                 SCREEN.innerHTML = "";
             }
         }
-    else if (Image == "Photos/void.jpg") {
-        if (p == 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
-        } else if (p == 2) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
-        } else if (p == 3) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
-        } else {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
-        }
+
+}
+
+
+
+
+/*
+
+else if (Image == "Photos/void.jpg") {
+    if (p == 1) {
+        INFO.innerHTML = "";
+        SCREEN.innerHTML = "";
+    } else if (p == 2) {
+        INFO.innerHTML = "";
+        SCREEN.innerHTML = "";
+    } else if (p == 3) {
+        INFO.innerHTML = "";
+        SCREEN.innerHTML = "";
+    } else {
+        INFO.innerHTML = "";
+        SCREEN.innerHTML = "";
     }
 }
+
+ */
