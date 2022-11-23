@@ -2,8 +2,38 @@ const INFO = document.getElementById("interface");
 const SCREEN = document.getElementById("millieu");
 
 
-function goBack(){
-    history.go(-1);
+function goHall(){
+
+}
+function goHallD(){
+
+}
+function goHallG(){
+
+}
+
+function goFront(){
+
+}
+
+function goScene(){
+
+}
+
+function goAmphi(){
+
+}
+
+function goMachine(){
+
+}
+
+function goBabyfoot(){
+
+}
+
+function goAscenceur(){
+
 }
 
 function goNext(p) {
@@ -377,8 +407,8 @@ function goNext(p) {
                     "</style>";
             }
         }
-    else if (Image == "Photos/left-stair.jpg") {
-        if (p == 1) {
+    else if (Image === "Photos/left-stair.jpg") {
+        if (p === 1) {
             INFO.innerHTML = "";
             SCREEN.innerHTML = "";
         }

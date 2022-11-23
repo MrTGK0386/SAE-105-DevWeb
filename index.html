@@ -11,8 +11,17 @@
 <body>
 <div class="parent" id="tonDaron">
 
-  <div id="gauche" class="contained">a gauche
-    <button onclick="goBack()">fuck go back</button>
+  <div id="gauche" class="contained">
+    <div id="card"></div>
+    <button onclick="goFront()" class="btn btn-primary">Front</button>
+    <button onclick="goHall()" class="btn btn-primary">Hall</button>
+    <button onclick="goHallD()" class="btn btn-primary">Hall droite</button>
+    <button onclick="goHallG()" class="btn btn-primary">Hall gauche</button>
+    <button onclick="goScene()" class="btn btn-primary">Scene</button>
+    <button onclick="goAmphi()" class="btn btn-primary">Amphi</button>
+    <button onclick="goMachine()" class="btn btn-primary">Machine</button>
+    <button onclick="goBabyfoot()" class="btn btn-primary">Babyfoot</button>
+    <button onclick="goAscenceur()" class="btn btn-primary">Ascenceur</button>
   </div>
 
   <div id="millieu" class="contained">
@@ -35,7 +44,7 @@
     </style>
   </div>
 
-  <div id="droite" class="contained">à droite</div>
+  <div id="droite" class="contained"></div>
 
 </div>
 <div id="interface">
