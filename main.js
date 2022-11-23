@@ -9,7 +9,7 @@ function goBack(){
 
 function goNext(p) {
     if (Image == "Photos/FrontIUT.jpg") {
-        if (p == 1) {
+        if (p === 1) {
             INFO.innerHTML = "<p>Bienvenue dans le hall de l'IUT !</p>\n" +
                 "<p>Cet endroit est le lieu ou les élèves se rassemblent entre les pauses</p>\n"
             SCREEN.innerHTML = "<img src=\"Photos/hall-global.jpg\" id=\"image\" alt=\"hall d'entré de l'IUT\">\n" +
@@ -39,106 +39,106 @@ function goNext(p) {
         } else {
             INFO.innerHTML = "<p>ENTREZ PAR LA BONNE PORTE !!! >:(</p>";
         }
-    } else if (Image == "Photos/hallglobal.jpg") {
-        if (p == 1) {
+    } else if (Image === "Photos/hallglobal.jpg") {
+        if (p === 1) {
             INFO.innerHTML = "";
             SCREEN.innerHTML = "";
-        } else if (p == 2) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
-        } else {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
-        }
-    } else if (Image == "Photos/hall-leftView.jpg") {
-        if (p == 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
-        } else if (p == 2) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
-        } else if (p == 3) {
+        } else if (p === 2) {
             INFO.innerHTML = "";
             SCREEN.innerHTML = "";
         } else {
             INFO.innerHTML = "";
             SCREEN.innerHTML = "";
         }
-    } else if (Image == "Photos/hall-leftView.jpg") {
-        if (p == 1) {
+    } else if (Image === "Photos/hall-leftView.jpg") {
+        if (p === 1) {
             INFO.innerHTML = "";
             SCREEN.innerHTML = "";
-        } else if (p == 2) {
+        } else if (p === 2) {
             INFO.innerHTML = "";
             SCREEN.innerHTML = "";
-        } else if (p == 3) {
+        } else if (p === 3) {
             INFO.innerHTML = "";
             SCREEN.innerHTML = "";
         } else {
             INFO.innerHTML = "";
             SCREEN.innerHTML = "";
         }
-    } else if (Image == "Photos/secretaria-doorFront.jpg") {
-        if (p == 1) {
+    } else if (Image === "Photos/hall-leftView.jpg") {
+        if (p === 1) {
+            INFO.innerHTML = "";
+            SCREEN.innerHTML = "";
+        } else if (p === 2) {
+            INFO.innerHTML = "";
+            SCREEN.innerHTML = "";
+        } else if (p === 3) {
+            INFO.innerHTML = "";
+            SCREEN.innerHTML = "";
+        } else {
+            INFO.innerHTML = "";
+            SCREEN.innerHTML = "";
+        }
+    } else if (Image === "Photos/secretaria-doorFront.jpg") {
+        if (p === 1) {
             INFO.innerHTML = "";
             SCREEN.innerHTML = "";
         } else {
             INFO.innerHTML = "";
             SCREEN.innerHTML = "";
         } 
-    } else if (Image == "Photos/hall-leftView.jpg") {
-            if (p == 1) {
+    } else if (Image === "Photos/hall-leftView.jpg") {
+            if (p === 1) {
                 INFO.innerHTML = "";
                 SCREEN.innerHTML = "";
-            } else if (p == 2) {
+            } else if (p === 2) {
                 INFO.innerHTML = "";
                 SCREEN.innerHTML = "";
-            } else if (p == 3) {
-                INFO.innerHTML = "";
-                SCREEN.innerHTML = "";
-            } else {
-                INFO.innerHTML = "";
-                SCREEN.innerHTML = "";
-            }
-    } else if (Image == "Photos/hall-pause.jpg") {
-            if (p == 1) {
-                INFO.innerHTML = "";
-                SCREEN.innerHTML = "";
-            } else if (p == 2) {
+            } else if (p === 3) {
                 INFO.innerHTML = "";
                 SCREEN.innerHTML = "";
             } else {
                 INFO.innerHTML = "";
                 SCREEN.innerHTML = "";
             }
-    } else if (Image == "Photos/machine.jpg") {
-            if (p == 1) {
+    } else if (Image === "Photos/hall-pause.jpg") {
+            if (p === 1) {
+                INFO.innerHTML = "";
+                SCREEN.innerHTML = "";
+            } else if (p === 2) {
                 INFO.innerHTML = "";
                 SCREEN.innerHTML = "";
             } else {
                 INFO.innerHTML = "";
                 SCREEN.innerHTML = "";
             }
-    } else if (Image == "Photos/babyfoot.jpg") {
-            if (p == 1) {
+    } else if (Image === "Photos/machine.jpg") {
+            if (p === 1) {
+                INFO.innerHTML = "";
+                SCREEN.innerHTML = "";
+            } else {
+                INFO.innerHTML = "";
+                SCREEN.innerHTML = "";
+            }
+    } else if (Image === "Photos/babyfoot.jpg") {
+            if (p === 1) {
                 INFO.innerHTML = "";
                 SCREEN.innerHTML = "";
             } 
-    } else if (Image == "Photos/front-amphi.jpg") {
-            if (p == 1) {
+    } else if (Image === "Photos/front-amphi.jpg") {
+            if (p === 1) {
                 INFO.innerHTML = "";
                 SCREEN.innerHTML = "";
-            } else if (p == 2) {
+            } else if (p === 2) {
                 INFO.innerHTML = "";
                 SCREEN.innerHTML = "";
             } 
-    } else if (Image == "Photos/front-scene.jpg") {
-            if (p == 1) {
+    } else if (Image === "Photos/front-scene.jpg") {
+            if (p === 1) {
                 INFO.innerHTML = "";
                 SCREEN.innerHTML = "";
             }
-    } else if (Image == "Photos/amphi.jpg") {
-            if (p == 1) {
+    } else if (Image === "Photos/amphi.jpg") {
+            if (p === 1) {
                 INFO.innerHTML = "";
                 SCREEN.innerHTML = "";
             }
