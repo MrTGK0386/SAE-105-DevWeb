@@ -14,7 +14,7 @@ function goNext(p) {
         if (p === 1) {
             INFO.innerHTML = "<p>Bienvenue dans le hall de l'IUT !</p>\n" +
                 "<p>Cet endroit est le lieu ou les élèves se rassemblent entre les pauses</p>\n";
-            SCREEN.innerHTML = "<img src=\"Photos/hall-global.jpg\" id=\"image\" alt=\"hall d'entré de l'IUT\">\n" +
+            SCREEN.innerHTML = "<img src=\"Photos/hall-global.jpg\" id=\"image\" alt=\"IUT entrance hub\">\n" +
                 "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
                 "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
                 "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
@@ -47,7 +47,7 @@ function goNext(p) {
         if (p === 1) {
             INFO.innerHTML = "<p>Vous êtes revenu en arrière ? Pourquoi ?</p>\n" +
                 "<p>N'ayez pas peur, il n'y à pas d'examen aujourd'hui personne ne vous n'avez rien à craindre</p>\n";
-            SCREEN.innerHTML = "<img src=\"Photos/FrontIUT.jpg\" id=\"image\" alt=\"devanture de l'IUT\">\n" +
+            SCREEN.innerHTML = "<img src=\"Photos/FrontIUT.jpg\" id=\"image\" alt=\"Front of the IUT\">\n" +
                 "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
                 "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
                 "<style>\n" +
@@ -69,7 +69,7 @@ function goNext(p) {
             INFO.innerHTML = "<p>Vous trouverez sur votre droite la scène de l'IUT, elle contient divers insturment en libre accés</p>\n" +
                 "<p>En face de vous ce trouve les Amphithéâtres \"Olympe de Gouges\" et \"Linus Torvald\" c'est ici qu'auront lieux vos cours magistraux</p>\n" +
                 "<p>Sur la gauche vous retrouverez l'espace détente avec des distributeur et des babyfoots</p>\n";
-            SCREEN.innerHTML = "<img src=\"Photos/hall-rightView.jpg\" id=\"image\" alt=\"Partie droite du hall de l'IUT\">\n" +
+            SCREEN.innerHTML = "<img src=\"Photos/hall-rightView.jpg\" id=\"image\" alt=\"Right part of the hub of the IUT\">\n" +
                 "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
                 "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
                 "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
@@ -125,7 +125,7 @@ function goNext(p) {
         if (p === 1) {
             INFO.innerHTML = "<p>Bienvenue dans le hall de l'IUT !</p>\n" +
                 "<p>Cet endroit est le lieu ou les élèves se rassemblent entre les pauses</p>\n";
-            SCREEN.innerHTML = "<img src=\"Photos/hall-global.jpg\" id=\"image\" alt=\"hall d'entré de l'IUT\">\n" +
+            SCREEN.innerHTML = "<img src=\"Photos/hall-global.jpg\" id=\"image\" alt=\"IUT entrance hub\">\n" +
                 "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
                 "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
                 "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
@@ -155,7 +155,7 @@ function goNext(p) {
                 "    mis à votre disposition ou ramener votre propre\n" +
                 "    matériel si il n'est pas trop encombrant</p>\n" +
                 "<p>Allez-y, essayez !</p>";
-            SCREEN.innerHTML = "<img src=\"Photos/front-scene.jpg\" id=\"image\" alt=\"petite scène de l'IUT\">\n" +
+            SCREEN.innerHTML = "<img src=\"Photos/front-scene.jpg\" id=\"image\" alt=\"Litlle IUT's stage\">\n" +
                 "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
                 "\n" +
                 "<style>\n" +
@@ -169,7 +169,7 @@ function goNext(p) {
         }
         else if (p === 3) {
             INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>\n";
-            SCREEN.innerHTML = "<img src=\"Photos/amphi.jpg\" id=\"image\" alt=\"L'amphi Linus Torvald\">\n" +
+            SCREEN.innerHTML = "<img src=\"Photos/amphi.jpg\" id=\"image\" alt=\"Linus Torvald amphitheater\">\n" +
                 "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
                 "\n" +
                 "<style>\n" +
@@ -221,7 +221,7 @@ function goNext(p) {
             SCREEN.innerHTML = "";
         } 
     }
-    else if (Image === "Photos/hall-leftView.jpg") {
+    else if (Image === "Photos/top-stairs.jpg") {
             if (p === 1) {
                 INFO.innerHTML = "";
                 SCREEN.innerHTML = "";
@@ -377,9 +377,14 @@ function goNext(p) {
                     "</style>";
             }
         }
+    else if (Image == "Photos/left-stair.jpg") {
+        if (p == 1) {
+            INFO.innerHTML = "";
+            SCREEN.innerHTML = "";
+        }
+    }
 
 }
-
 
 
 
