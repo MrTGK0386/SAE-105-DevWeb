@@ -1,6 +1,8 @@
 const INFO = document.getElementById("interface");
 const SCREEN = document.getElementById("millieu");
 
+//these are the function to warp to each place in the iut
+
 function goAmphi(){
     INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>\n";
     SCREEN.innerHTML = "<img src=\"Photos/amphi.jpg\" id=\"image\" alt=\"Linus Torvald amphitheater\">\n" +
@@ -522,10 +524,38 @@ function goTopStair(){
         "    }\n" +
         "</style>";
 } //
+function goFablab(){
+    INFO.innerHTML = "";
+    SCREEN.innerHTML = "<img src=\"Photos/fablab.jpg\" id=\"image\" alt=\"The IUT's fablab\">\n" +
+        "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
+        "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
+        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
+        "\n" +
+        "<style>\n" +
+        "    #etienne {\n" +
+        "        top: 92%;\n" +
+        "        right: 0;\n" +
+        "        width: 100%;\n" +
+        "        height: 50px;\n" +
+        "    }\n" +
+        "    #fabio {\n" +
+        "         top: 25%;\n" +
+        "         left: 60%;\n" +
+        "         width: 200px;\n" +
+        "         height: 400px;\n" +
+        "     }\n" +
+        "    #julien {\n" +
+        "        top: 0;\n" +
+        "        left: 0;\n" +
+        "        width: 342px;\n" +
+        "        height: 92%;\n" +
+        "    }\n" +
+        "</style>";
+} //
 
 
 
-function goNext(p) {
+function goNext(p) { //this function is used to change the place you're in 
     const Image = document.getElementById("image").getAttribute("src");
     console.log(p);
     console.log(Image)
@@ -550,17 +580,16 @@ function goNext(p) {
     }
     else if (Image === "Photos/hall-leftView.jpg") {
         if (p === 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
-        } else if (p === 2) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
-        } else if (p === 3) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
-        } else {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+            return goHall();
+        } 
+        else if (p === 2) {
+            return goTopStair();
+        } 
+        else if (p === 3) {
+            return goLeftStair();
+        } 
+        else {
+            return goSecretaria();
         }
     }
     else if (Image === "Photos/hall-rightView.jpg") {
@@ -579,30 +608,18 @@ function goNext(p) {
     } //done
     else if (Image === "Photos/secretaria-doorFront.jpg") {
         if (p === 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+            return goHallG();
         }
         else {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+            return goLeftStair()
         } 
     }
     else if (Image === "Photos/top-stairs.jpg") {
             if (p === 1) {
-                INFO.innerHTML = "";
-                SCREEN.innerHTML = "";
-            }
-            else if (p === 2) {
-                INFO.innerHTML = "";
-                SCREEN.innerHTML = "";
-            }
-            else if (p === 3) {
-                INFO.innerHTML = "";
-                SCREEN.innerHTML = "";
+                return goCouloirTop1();
             }
             else {
-                INFO.innerHTML = "";
-                SCREEN.innerHTML = "";
+                return goHallG();
             }
     }
     else if (Image === "Photos/hall-pause.jpg") {
@@ -610,29 +627,24 @@ function goNext(p) {
                 return goHallD();
             }
             else if (p === 2) {
-                INFO.innerHTML = "";
-                SCREEN.innerHTML = "";
+                return goMachine();
             }
             else {
-                INFO.innerHTML = "";
-                SCREEN.innerHTML = "";
+                return goBabyfoot();
             }
     }
     else if (Image === "Photos/machine.jpg") {
             if (p === 1) {
-                INFO.innerHTML = "";
-                SCREEN.innerHTML = "";
-            }
-            else {
-                INFO.innerHTML = "";
-                SCREEN.innerHTML = "";
+                return goHallPause();
             }
     }
     else if (Image === "Photos/babyfoot.jpg") {
             if (p === 1) {
-                INFO.innerHTML = "";
-                SCREEN.innerHTML = "";
+                return goHallPause();
             } 
+            else {
+                return goLeftStair();
+            }
     }
     else if (Image === "Photos/front-scene.jpg") {
             if (p === 1) {
@@ -646,56 +658,71 @@ function goNext(p) {
         }
     else if (Image === "Photos/left-stair.jpg") {
         if (p === 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+            return goSecretaria();
+        }
+        else {
+            return goCouloirBot();
         }
     }
     else if (Image === "Photos/couloirTop1.jpg") {
         if (p === 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+            return goTopStair();
+        }
+        if (p === 2){
+            return goAscenceurBot();
+        }
+        else {
+            return goCouloirTop2()
         }
     }
     else if (Image === "Photos/couloirTop2.jpg") {
         if (p === 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+           return goCouloirTop1();
+        }
+        else {
+            return goD1XX();
         }
     }
     else if (Image === "Photos/D1XX.jpg") {
         if (p === 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+            return goCouloirTop2();
         }
     }
     else if (Image === "Photos/couloirBot.jpg") {
         if (p === 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+            return goLeftStair();
+        }
+        else {
+            return goC0XX();
         }
     }
     else if (Image === "Photos/C0XX.jpg") {
         if (p === 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+            return goCouloirBot();
         }
     }
     else if (Image === "Photos/ascenceurBot.jpg") {
         if (p === 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+            return goCouloirTop1();
+        }
+        if (p === 2) {
+            return goCouloirTop2();
+        }
+        else {
+            return goAscenceurTop();
         }
     }
     else if (Image === "Photos/ascenceurTop.jpg") {
         if (p === 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+            return goAscenceurBot();
+        }
+        else {
+            return goFablab();
         }
     }
     else if (Image === "Photos/fablab.jpg") {
         if (p === 1) {
-            INFO.innerHTML = "";
-            SCREEN.innerHTML = "";
+            return goAscenceurTop()
         }
     }
     
