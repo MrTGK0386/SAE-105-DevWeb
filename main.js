@@ -18,7 +18,7 @@ function goAmphi(){
         "</style>";
 } //done
 function goAscenceurBot(){
-    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    INFO.innerHTML = "<p>Un ascenceur qui permet de rejoindre le dernier étage</p>";
     SCREEN.innerHTML = "<img src=\"Photos/ascenceurBot.jpg\" id=\"image\" alt=\"Elevator door\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -46,7 +46,7 @@ function goAscenceurBot(){
         "</style>";
 } // done
 function goAscenceurTop(){
-    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    INFO.innerHTML = "<p>Bienvenue au dernier étage, c'est ici que vous trouverez les équipe technique, les classes de RT et le FabLab</p>";
     SCREEN.innerHTML = "<img src=\"Photos/ascenceurTop.jpg\" id=\"image\" alt=\"Elevator door\">\n" +
         "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -67,7 +67,7 @@ function goAscenceurTop(){
         "</style>";
 } // done
 function goBabyfoot(){
-    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    INFO.innerHTML = "<p>C'est ici que vous pouvez faire vos plus gros tournois de babyfoot</p>";
     SCREEN.innerHTML = "<img src=\"Photos/babyfoot.jpg\" id=\"image\" alt=\"A babyfoot table\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -93,9 +93,9 @@ function goBabyfoot(){
         "        height: 92%;\n" +
         "    }\n" +
         "</style>";
-} //
+} // done
 function goC0XX(){
-    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    INFO.innerHTML = "<p>Voici une salle de cours classique, la pluparts d'entre-elles se trouvent au rez-de-chaussez</p>";
     SCREEN.innerHTML = "<img src=\"Photos/C0XX.jpg\" id=\"image\" alt=\"A random groundfloor class \">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "\n" +
@@ -109,7 +109,7 @@ function goC0XX(){
         "</style>";
 } // done
 function goCouloirBot(){
-    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    INFO.innerHTML = "<p>Ce couloir mène vers les salles de classe du rez-de-chaussez</p>";
     SCREEN.innerHTML = "<img src=\"Photos/couloirBot.jpg\" id=\"image\" alt=\"A groundfloor coridor\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -129,7 +129,8 @@ function goCouloirBot(){
         "</style>";
 } // done
 function goCouloirTop1(){
-    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    INFO.innerHTML = "<p>A gauche dans ce couloir, vous trouverez un ascenceur</p>" +
+        "<p>Au fond vous pourrez accéder au salles techniques</p>";
     SCREEN.innerHTML = "<img src=\"Photos/couloirTop1.jpg\" id=\"image\" alt=\"First floor's first corridor\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -157,7 +158,7 @@ function goCouloirTop1(){
         "</style>";
 } // done
 function goCouloirTop2(){
-    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    INFO.innerHTML = "<p>Sur votre droite, vous trouverez les salles de classe technique des MMI</p>";
     SCREEN.innerHTML = "<img src=\"Photos/couloirTop2.jpg\" id=\"image\" alt=\"First floor's second corridor\">\n" +
     "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
     "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -177,7 +178,8 @@ function goCouloirTop2(){
     "</style>";
 } // done
 function goD1XX(){
-    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    INFO.innerHTML = "<p>Ceci est une salle de classe technique de MMI</p> " +
+        "<p>C'est ici que les MMI passe le plus de temps en cours</p>";
     SCREEN.innerHTML = "<img src=\"Photos/D1XX.jpg\" id=\"image\" alt=\"A random tech class in the first floor\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "\n" +
@@ -208,8 +210,8 @@ function goScene(){
         "</style>";
 } //done
 function goFront(){
-    INFO.innerHTML = "<p>Vous êtes revenu en arrière ? Pourquoi ?</p>\n" +
-        "<p>N'ayez pas peur, il n'y à pas d'examen aujourd'hui personne ne vous n'avez rien à craindre</p>\n";
+    INFO.innerHTML = "<p>Bienvenue à l'IUT de Béziers j'espère que la visite vous plaira</p>\n" +
+        "<p>Entrez vite n'ayez pas peur</p>\n";
     SCREEN.innerHTML = "<img src=\"Photos/FrontIUT.jpg\" id=\"image\" alt=\"Front of the IUT\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -322,9 +324,8 @@ function goHallPause(){
         "</style>";
 } //done
 function goHallD(){
-    INFO.innerHTML = "<p>Vous trouverez sur votre droite la scène de l'IUT, elle contient divers insturment en libre accés</p>\n" +
-        "<p>En face de vous ce trouve les Amphithéâtres \"Olympe de Gouges\" et \"Linus Torvald\" c'est ici qu'auront lieux vos cours magistraux</p>\n" +
-        "<p>Sur la gauche vous retrouverez l'espace détente avec des distributeur et des babyfoots</p>\n";
+    INFO.innerHTML = "<p>Vous trouverez sur votre gauche la partie administrative de l'IUT, c'est ici qu'il faudra venir pour régler la majorité des problèmes administratif</p>\n" +
+        "<p>L'escalier situé en face de vous permet d'accéder au premier étage. C'est l'étage dans lequel vous passerez le plus de temps à l'IUT</p>";
     SCREEN.innerHTML = "<img src=\"Photos/hall-rightView.jpg\" id=\"image\" alt=\"Right part of the hub of the IUT\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -358,7 +359,9 @@ function goHallD(){
         "</style>";
 } // done
 function goLeftStair(){
-    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    INFO.innerHTML = "<p>En passant par ici vous pouvez accéder</p>" +
+        "<p>A droite : vous pouvez accéder à l'espace de pause du hall</p>" +
+        "<p>Et en face de vous se trouve les espaces de cours du rez-de-chaussez</p>";
     SCREEN.innerHTML = "<img src=\"Photos/left-stair.jpg\" id=\"image\" alt=\"A view below the stairs\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -385,7 +388,8 @@ function goLeftStair(){
         "</style>";
 } // done
 function goMachine(){
-    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    INFO.innerHTML = "<p>Ces machinnes permettent d'acheter à manger ou à boire mais attention</p>" +
+        "<p>elles ne prennent pas la cartes</p>";
     SCREEN.innerHTML = "<img src=\"Photos/machine.jpg\" id=\"image\" alt=\"Some vendings machine\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -413,7 +417,7 @@ function goMachine(){
         "</style>";
 } // done
 function goSecretaria(){
-    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    INFO.innerHTML = "<p>Personne n'est là pour le moment...</p>";
     SCREEN.innerHTML = "<img src=\"Photos/secretaria-doorFront.jpg\" id=\"image\" alt=\"Secretary's offices\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -441,7 +445,7 @@ function goSecretaria(){
         "</style>";
 } // done
 function goTopStair(){
-    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    INFO.innerHTML = "<p>En continuant tout droit, vous pourrez accéder à l'ascenceur ou au salles de cours des MMI</p>";
     SCREEN.innerHTML = "<img src=\"Photos/top-stairs.jpg\" id=\"image\" alt=\"The top of the stairs\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -463,7 +467,8 @@ function goTopStair(){
         "</style>";
 } // done
 function goFablab(){
-    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    INFO.innerHTML = "<p>Cet endroit est le paradis des petits créatifs</p>" +
+        "<p>Vous pourrez venir ici pour fabriquer le monde avec Alexis</p>";
     SCREEN.innerHTML = "<img src=\"Photos/fablab.jpg\" id=\"image\" alt=\"The IUT's fablab\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -595,7 +600,7 @@ function goNext(p) { //this function is used to change the place you're in
             else {
                 return goLeftStair();
             }
-    } //
+    } // done
     else if (Image === "Photos/front-scene.jpg") {
             if (p === 1) {
                 return goHallD();
@@ -677,10 +682,16 @@ function goNext(p) { //this function is used to change the place you're in
         if (p === 1) {
             return goAscenceurTop()
         }
-    } //
+    } // no image
     
 
 }
+
+
+
+
+
+
 
 
 
