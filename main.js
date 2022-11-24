@@ -18,7 +18,7 @@ function goAmphi(){
         "</style>";
 } //done
 function goAscenceurBot(){
-    INFO.innerHTML = "";
+    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
     SCREEN.innerHTML = "<img src=\"Photos/ascenceurBot.jpg\" id=\"image\" alt=\"Elevator door\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -46,7 +46,7 @@ function goAscenceurBot(){
         "</style>";
 } //
 function goAscenceurTop(){
-    INFO.innerHTML = "";
+    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
     SCREEN.innerHTML = "<img src=\"Photos/ascenceurTop.jpg\" id=\"image\" alt=\"Elevator door\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -74,7 +74,7 @@ function goAscenceurTop(){
         "</style>";
 } //
 function goBabyfoot(){
-    INFO.innerHTML = "";
+    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
     SCREEN.innerHTML = "<img src=\"Photos/babyfoot.jpg\" id=\"image\" alt=\"A babyfoot table\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -102,7 +102,7 @@ function goBabyfoot(){
         "</style>";
 } //
 function goC0XX(){
-    INFO.innerHTML = "";
+    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
     SCREEN.innerHTML = "<img src=\"Photos/C0XX.jpg\" id=\"image\" alt=\"A random groundfloor class \">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -130,7 +130,7 @@ function goC0XX(){
         "</style>";
 } //
 function goCouloirBot(){
-    INFO.innerHTML = "";
+    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
     SCREEN.innerHTML = "<img src=\"Photos/couloirBot.jpg\" id=\"image\" alt=\"A groundfloor coridor\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -158,11 +158,10 @@ function goCouloirBot(){
         "</style>";
 } //
 function goCouloirTop1(){
-    INFO.innerHTML = "";
-    SCREEN.innerHTML = "<img src=\"Photos/couloirTop1.jpg.jpg\" id=\"image\" alt=\"First floor's first corridor\">\n" +
+    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    SCREEN.innerHTML = "<img src=\"Photos/couloirTop1.jpg\" id=\"image\" alt=\"First floor's first corridor\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
         "\n" +
         "<style>\n" +
         "    #etienne {\n" +
@@ -177,17 +176,11 @@ function goCouloirTop1(){
         "         width: 200px;\n" +
         "         height: 400px;\n" +
         "     }\n" +
-        "    #julien {\n" +
-        "        top: 0;\n" +
-        "        left: 0;\n" +
-        "        width: 342px;\n" +
-        "        height: 92%;\n" +
-        "    }\n" +
         "</style>";
-} //
+} // done
 function goCouloirTop2(){
-    INFO.innerHTML = "";
-    SCREEN.innerHTML = "<img src=\"Photos/couloirTop2.jpg.jpg\" id=\"image\" alt=\"First floor's second corridor\">\n" +
+    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    SCREEN.innerHTML = "<img src=\"Photos/couloirTop2.jpg\" id=\"image\" alt=\"First floor's second corridor\">\n" +
     "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
     "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
     "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
@@ -214,11 +207,9 @@ function goCouloirTop2(){
     "</style>";
 } //
 function goD1XX(){
-    INFO.innerHTML = "";
+    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
     SCREEN.innerHTML = "<img src=\"Photos/D1XX.jpg\" id=\"image\" alt=\"A random tech class in the first floor\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
-        "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
         "\n" +
         "<style>\n" +
         "    #etienne {\n" +
@@ -227,20 +218,8 @@ function goD1XX(){
         "        width: 100%;\n" +
         "        height: 50px;\n" +
         "    }\n" +
-        "    #fabio {\n" +
-        "         top: 25%;\n" +
-        "         left: 60%;\n" +
-        "         width: 200px;\n" +
-        "         height: 400px;\n" +
-        "     }\n" +
-        "    #julien {\n" +
-        "        top: 0;\n" +
-        "        left: 0;\n" +
-        "        width: 342px;\n" +
-        "        height: 92%;\n" +
-        "    }\n" +
         "</style>";
-} //
+} // done
 function goScene(){
     INFO.innerHTML = "<p>Ici, vous pouvez jouez des instrument qui sont \n" +
         "    mis à votre disposition ou ramener votre propre\n" +
@@ -308,7 +287,9 @@ function goHall(){
         "</style>";
 } //done
 function goHallG(){
-    INFO.innerHTML = "";
+    INFO.innerHTML = "<p>Sur votre gauche ce trouve toute la partie administration de l'IUT</p>" +
+    "<p>En haut de cette escalier ce trouve l'étage avec les salles technique et l'ascenceur donnant accés au FabLab</p>" +
+    "<p>Si vous passez à gauche de l'escalier, vous pourrez accéder au salles de cours normales</p>";
     SCREEN.innerHTML = "<img src=\"Photos/hall-leftView.jpg\" id=\"image\" alt=\"This is the left view of the hub\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -316,31 +297,31 @@ function goHallG(){
         "<button onclick=\"goNext(4)\" class=\"hide\" id=\"nathan\"></button>\n" +
         "<style>\n" +
         "    #etienne {\n" +
-        "        top: 30%;\n" +
-        "        left: 20%;\n" +
-        "        width: 100px;\n" +
-        "        height: 100px;\n" +
+        "        bottom: 1%;\n" +
+        "        right: 0;\n" +
+        "        width: 275px;\n" +
+        "        height: 75%;\n" +
         "    }\n" +
         "    #fabio {\n" +
-        "        top: 30%;\n" +
-        "        left: 20%;\n" +
+        "        top: 18%;\n" +
+        "        left: 45%;\n" +
         "        width: 100px;\n" +
-        "        height: 100px;\n" +
+        "        height: 125px;\n" +
         "    }\n" +
         "    #julien {\n" +
-        "        top: 30%;\n" +
+        "        top: 42%;\n" +
         "        left: 20%;\n" +
-        "        width: 100px;\n" +
-        "        height: 100px;\n" +
+        "        width: 92px;\n" +
+        "        height: 294px;\n" +
         "    }\n" +
         "    #nathan {\n" +
-        "        top: 30%;\n" +
-        "        left: 20%;\n" +
-        "        width: 100px;\n" +
-        "        height: 100px;\n" +
+        "        top: 40%;\n" +
+        "        left: 3%;\n" +
+        "        width: 134px;\n" +
+        "        height: 322px;\n" +
         "    }\n" +
         "</style>";
-} //
+} //done
 function goHallPause(){
     INFO.innerHTML = "<p>Cette permet de se ressourcer et de discutter tranquillement</p>\n" +
         "<p>Vous pouvez aussi jouer une partie endiabler de babyfoot jusqu'a en avoir mal aux main</p>\n";
@@ -405,43 +386,37 @@ function goHallD(){
         "        height: 369px;\n" +
         "    }\n" +
         "</style>";
-} //
+} // done
 function goLeftStair(){
-    INFO.innerHTML = "";
-    SCREEN.innerHTML = "<img src=\"Photos/hall-left-stair.jpg\" id=\"image\" alt=\"A view below the stairs\">\n" +
+    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
+    SCREEN.innerHTML = "<img src=\"Photos/left-stair.jpg\" id=\"image\" alt=\"A view below the stairs\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
         "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
         "<button onclick=\"goNext(4)\" class=\"hide\" id=\"nathan\"></button>\n" +
         "<style>\n" +
         "    #etienne {\n" +
-        "        top: 30%;\n" +
-        "        left: 20%;\n" +
-        "        width: 100px;\n" +
-        "        height: 100px;\n" +
+        "        top: 92%;\n" +
+        "        right: 0;\n" +
+        "        width: 100%;\n" +
+        "        height: 50px;\n" +
         "    }\n" +
         "    #fabio {\n" +
-        "        top: 30%;\n" +
-        "        left: 20%;\n" +
+        "        top: 46%;\n" +
+        "        left: 41%;\n" +
         "        width: 100px;\n" +
-        "        height: 100px;\n" +
+        "        height: 120px;\n" +
         "    }\n" +
         "    #julien {\n" +
-        "        top: 30%;\n" +
-        "        left: 20%;\n" +
-        "        width: 100px;\n" +
-        "        height: 100px;\n" +
-        "    }\n" +
-        "    #nathan {\n" +
-        "        top: 30%;\n" +
-        "        left: 20%;\n" +
-        "        width: 100px;\n" +
-        "        height: 100px;\n" +
+        "        top: 0;\n" +
+        "        right: 0;\n" +
+        "        width: 50px;\n" +
+        "        height: 92%;\n" +
         "    }\n" +
         "</style>";
-} //
+} // done
 function goMachine(){
-    INFO.innerHTML = "";
+    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
     SCREEN.innerHTML = "<img src=\"Photos/machine.jpg\" id=\"image\" alt=\"Some vendings machine\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -455,21 +430,21 @@ function goMachine(){
         "        height: 50px;\n" +
         "    }\n" +
         "    #fabio {\n" +
-        "         top: 25%;\n" +
-        "         left: 60%;\n" +
-        "         width: 200px;\n" +
-        "         height: 400px;\n" +
+        "         top: 0;\n" +
+        "         right: 0;\n" +
+        "         width: 50px;\n" +
+        "         height: 92%;\n" +
         "     }\n" +
         "    #julien {\n" +
-        "        top: 0;\n" +
-        "        left: 0;\n" +
-        "        width: 342px;\n" +
-        "        height: 92%;\n" +
+        "        top: 15%;\n" +
+        "        left: 6%;\n" +
+        "        width: 756px;\n" +
+        "        height: 73%;\n" +
         "    }\n" +
         "</style>";
-} //
+} // done
 function goSecretaria(){
-    INFO.innerHTML = "";
+    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
     SCREEN.innerHTML = "<img src=\"Photos/secretaria-doorFront.jpg\" id=\"image\" alt=\"Secretary's offices\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -483,21 +458,21 @@ function goSecretaria(){
         "        height: 50px;\n" +
         "    }\n" +
         "    #fabio {\n" +
-        "         top: 25%;\n" +
-        "         left: 60%;\n" +
+        "         top: 0;\n" +
+        "         right: 0;\n" +
         "         width: 200px;\n" +
-        "         height: 400px;\n" +
+        "         height: 92%;\n" +
         "     }\n" +
         "    #julien {\n" +
-        "        top: 0;\n" +
-        "        left: 0;\n" +
-        "        width: 342px;\n" +
-        "        height: 92%;\n" +
+        "        top: 5%;\n" +
+        "        left: 13%;\n" +
+        "        width: 409px;\n" +
+        "        height: 75%;\n" +
         "    }\n" +
         "</style>";
-} //
+} // done
 function goTopStair(){
-    INFO.innerHTML = "";
+    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
     SCREEN.innerHTML = "<img src=\"Photos/top-stairs.jpg\" id=\"image\" alt=\"The top of the stairs\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -507,25 +482,19 @@ function goTopStair(){
         "    #etienne {\n" +
         "        top: 92%;\n" +
         "        right: 0;\n" +
-        "        width: 100%;\n" +
+        "        width: 60%;\n" +
         "        height: 50px;\n" +
         "    }\n" +
         "    #fabio {\n" +
-        "         top: 25%;\n" +
-        "         left: 60%;\n" +
-        "         width: 200px;\n" +
-        "         height: 400px;\n" +
+        "         top: 27%;\n" +
+        "         left: 51%;\n" +
+        "         width: 239px;\n" +
+        "         height: 247px;\n" +
         "     }\n" +
-        "    #julien {\n" +
-        "        top: 0;\n" +
-        "        left: 0;\n" +
-        "        width: 342px;\n" +
-        "        height: 92%;\n" +
-        "    }\n" +
         "</style>";
-} //
+} // done
 function goFablab(){
-    INFO.innerHTML = "";
+    INFO.innerHTML = "<p>C'est ici que votre patience sera mise à l'épreuve</p>";
     SCREEN.innerHTML = "<img src=\"Photos/fablab.jpg\" id=\"image\" alt=\"The IUT's fablab\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -577,7 +546,7 @@ function goNext(p) { //this function is used to change the place you're in
         else {
             return goHallG();
         }
-    }
+    } //done
     else if (Image === "Photos/hall-leftView.jpg") {
         if (p === 1) {
             return goHall();
@@ -591,7 +560,7 @@ function goNext(p) { //this function is used to change the place you're in
         else {
             return goSecretaria();
         }
-    }
+    } //done
     else if (Image === "Photos/hall-rightView.jpg") {
         if (p === 1) {
             return goHall();
@@ -610,18 +579,21 @@ function goNext(p) { //this function is used to change the place you're in
         if (p === 1) {
             return goHallG();
         }
-        else {
+        if (p === 2) {
             return goLeftStair()
-        } 
-    }
+        }
+        else {
+
+        }
+    } // done
     else if (Image === "Photos/top-stairs.jpg") {
             if (p === 1) {
-                return goCouloirTop1();
-            }
-            else {
                 return goHallG();
             }
-    }
+            else {
+                return goCouloirTop1();
+            }
+    } // done
     else if (Image === "Photos/hall-pause.jpg") {
             if (p === 1) {
                 return goHallD();
@@ -632,12 +604,18 @@ function goNext(p) { //this function is used to change the place you're in
             else {
                 return goBabyfoot();
             }
-    }
+    } // done
     else if (Image === "Photos/machine.jpg") {
-            if (p === 1) {
+            if (p === 2) {
                 return goHallPause();
             }
-    }
+            else if (p === 1) {
+                return goBabyfoot();
+            }
+            else {
+
+            }
+    } // done
     else if (Image === "Photos/babyfoot.jpg") {
             if (p === 1) {
                 return goHallPause();
@@ -650,20 +628,23 @@ function goNext(p) { //this function is used to change the place you're in
             if (p === 1) {
                 return goHallD();
             }
-    }
+    } // done
     else if (Image === "Photos/amphi.jpg") {
             if (p === 1) {
                 return goHallD();
             }
-        }
+        } // done
     else if (Image === "Photos/left-stair.jpg") {
         if (p === 1) {
             return goSecretaria();
         }
+        if (p === 2){
+            return goBabyfoot();
+        }
         else {
             return goCouloirBot();
         }
-    }
+    } // done
     else if (Image === "Photos/couloirTop1.jpg") {
         if (p === 1) {
             return goTopStair();
@@ -674,7 +655,7 @@ function goNext(p) { //this function is used to change the place you're in
         else {
             return goCouloirTop2()
         }
-    }
+    } //
     else if (Image === "Photos/couloirTop2.jpg") {
         if (p === 1) {
            return goCouloirTop1();
@@ -682,12 +663,12 @@ function goNext(p) { //this function is used to change the place you're in
         else {
             return goD1XX();
         }
-    }
+    } //
     else if (Image === "Photos/D1XX.jpg") {
         if (p === 1) {
             return goCouloirTop2();
         }
-    }
+    } // done
     else if (Image === "Photos/couloirBot.jpg") {
         if (p === 1) {
             return goLeftStair();
@@ -695,12 +676,12 @@ function goNext(p) { //this function is used to change the place you're in
         else {
             return goC0XX();
         }
-    }
+    } //
     else if (Image === "Photos/C0XX.jpg") {
         if (p === 1) {
             return goCouloirBot();
         }
-    }
+    } //
     else if (Image === "Photos/ascenceurBot.jpg") {
         if (p === 1) {
             return goCouloirTop1();
@@ -711,7 +692,7 @@ function goNext(p) { //this function is used to change the place you're in
         else {
             return goAscenceurTop();
         }
-    }
+    } //
     else if (Image === "Photos/ascenceurTop.jpg") {
         if (p === 1) {
             return goAscenceurBot();
@@ -719,12 +700,12 @@ function goNext(p) { //this function is used to change the place you're in
         else {
             return goFablab();
         }
-    }
+    } //
     else if (Image === "Photos/fablab.jpg") {
         if (p === 1) {
             return goAscenceurTop()
         }
-    }
+    } //
     
 
 }
