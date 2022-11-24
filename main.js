@@ -109,7 +109,8 @@ function goC0XX(){
         "</style>";
 } // done
 function goCouloirBot(){
-    INFO.innerHTML = "<p>Ce couloir mène vers les salles de classe du rez-de-chaussez</p>";
+    INFO.innerHTML = "<p>Ce couloir mène vers les salles de classe du rez-de-chaussez,</p>" +
+        "<p>tout de suite sur votre droite</p>";
     SCREEN.innerHTML = "<img src=\"Photos/couloirBot.jpg\" id=\"image\" alt=\"A groundfloor coridor\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +

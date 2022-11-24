@@ -113,7 +113,7 @@ body{
 
 .hide {
     position: absolute;
-    background:black; /*transparent*/
+    background:transparent; /*transparent*/
     border: 0;
     margin: 0;
     padding: 0;
