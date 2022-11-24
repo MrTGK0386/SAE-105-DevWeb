@@ -296,7 +296,7 @@ function goHallG(){
         "</style>";
 } //done
 function goHallPause(){
-    INFO.innerHTML = "<p>Cette permet de se ressourcer et de discutter tranquillement</p>\n" +
+    INFO.innerHTML = "<p>Cette espace permet de se ressourcer et de discutter tranquillement</p>\n" +
         "<p>Vous pouvez aussi jouer une partie endiabler de babyfoot jusqu'a en avoir mal aux main</p>\n";
     SCREEN.innerHTML = "<img src=\"Photos/hall-pause.jpg\" id=\"image\" alt=\"Chilling zone's entrance\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
@@ -419,7 +419,7 @@ function goMachine(){
         "</style>";
 } // done
 function goSecretaria(){
-    INFO.innerHTML = "<p>Personne n'est là pour le moment...</p>";
+    INFO.innerHTML = "<p>Personne n'a l'air d'être là ...</p>";
     SCREEN.innerHTML = "<img src=\"Photos/secretaria-doorFront.jpg\" id=\"image\" alt=\"Secretary's offices\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
@@ -470,7 +470,7 @@ function goTopStair(){
 } // done
 function goFablab(){
     INFO.innerHTML = "<p>Cet endroit est le paradis des petits créatifs</p>" +
-        "<p>Vous pourrez venir ici pour fabriquer le monde avec Alexis</p>";
+        "<p>Vous pourrez venir ici pour fabriquer le monde</p>";
     SCREEN.innerHTML = "<img src=\"Photos/fablab.jpg\" id=\"image\" alt=\"The IUT's fablab\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
