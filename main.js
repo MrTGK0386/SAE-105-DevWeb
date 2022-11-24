@@ -325,8 +325,9 @@ function goHallPause(){
         "</style>";
 } //done
 function goHallD(){
-    INFO.innerHTML = "<p>Vous trouverez sur votre gauche la partie administrative de l'IUT, c'est ici qu'il faudra venir pour régler la majorité des problèmes administratif</p>\n" +
-        "<p>L'escalier situé en face de vous permet d'accéder au premier étage. C'est l'étage dans lequel vous passerez le plus de temps à l'IUT</p>";
+    INFO.innerHTML = "<p>En face de vous se trouve les amphithéâtre de l'IUT</p>\n" +
+        "<p>A droite vous trouverez une scène avec des instruments en libre accés pour permettre la pratique de la musique à l'IUT</p>" +
+        "<p>Et à gauche vous trouverez l'espace de pause du hall avec des distributeurs et des babyfoots</p>";
     SCREEN.innerHTML = "<img src=\"Photos/hall-rightView.jpg\" id=\"image\" alt=\"Right part of the hub of the IUT\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
