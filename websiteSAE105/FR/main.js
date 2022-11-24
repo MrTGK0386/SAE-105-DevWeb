@@ -7,12 +7,11 @@ const TICK = 1000;
 
 const textFrontBadDoor = "ENTREZ PAR LA BONNE PORTE !!!" //text when you try enter the exit door
 const textCofee = "Oh un café, SUPER !!" // text when you click on tje vending machine
-const textPiano = "Vous êtes actuellement en train de jouer : "
-const textDrum = "Vous êtes actuellement en train de jouer :"
-const textPercu = "Vous êtes actuellement en train de jouer :"
-const textSynth = "Vous êtes actuellement en train de jouer :"
-const textMaster = "Vous êtes actuellement en train de jouer :"
-const textGenius = "Vous êtes actuellement en train de jouer :"
+const textPiano = "Vous êtes actuellement en train de jouer : Le troisième mouvement de la sonate au clair de Lune par Beethoven"
+const textDrum = "Vous êtes actuellement en train de jouer : Song 2 par Blur"
+const textPercu = "Vous êtes actuellement en train de jouer : Sympathy for the Devil par les Rolling Stones"
+const textSynth = "Vous êtes actuellement en train de jouer : Jump par Van Halen"
+const textMaster = "Vous êtes actuellement en train de jouer : La vériter par ZZXX MXT"
 let rebel = 0; //accumulator
 let piano = 0; //accumulator
 let drum = 0; //accumulator
@@ -22,11 +21,11 @@ let master = 0; //accumulator
 let genius = []; //accumulator
 let explorator = []; //accumulator
 let cofee = 0; //accumulator
-const Apiano = new Audio("");
-const Adrum = new Audio("");
-const Apercu = new Audio("");
-const Asynth = new Audio("");
-const Amaster = new Audio("");
+const Apiano = new Audio("Sounds/Piano.mp3");
+const Adrum = new Audio("Sounds/Drum.mp3");
+const Apercu = new Audio("Sounds/Percu.mp3");
+const Asynth = new Audio("Sounds/Synth.mp3");
+const Amaster = new Audio("Sounds/Master.mp3");
 
 //these are the function to warp to each place in the iut
 
@@ -851,50 +850,55 @@ function Coffee(i){
 
 function Music(l){
     if (l === 1){
-        Apiano.play();
+        Apiano.load();
         Adrum.pause();
         Apercu.pause();
         Asynth.pause();
         Amaster.pause();
         genius.push("a");
         piano++;
+        INFO.innerHTML = "<p>"+textPiano+"</p>";
     }
     else if (l === 2){
         Apiano.pause();
-        Adrum.play();
+        Adrum.load();
         Apercu.pause();
         Asynth.pause();
         Amaster.pause();
         genius.push("b");
         drum++;
+        INFO.innerHTML = "<p>"+textDrum+"</p>";
     }
     else if (l === 3){
         Apiano.pause();
         Adrum.pause();
-        Apercu.play();
+        Apercu.load();
         Asynth.pause();
         Amaster.pause();
         genius.push("c");
         percu++;
+        INFO.innerHTML = "<p>"+textPercu+"</p>";
 
     }
     else if (l === 4){
         Apiano.pause();
         Adrum.pause();
         Apercu.pause();
-        Asynth.play();
+        Asynth.load();
         Amaster.pause();
         genius.push("d");
         synth++;
+        INFO.innerHTML = "<p>"+textSynth+"</p>";
     }
     else {
         Apiano.pause();
         Adrum.pause();
         Apercu.pause();
         Asynth.pause();
-        Amaster.play();
+        Amaster.load();
         genius.push("e");
         master++;
+        INFO.innerHTML = "<p>"+textMaster+"</p>";
     }
 }
 
