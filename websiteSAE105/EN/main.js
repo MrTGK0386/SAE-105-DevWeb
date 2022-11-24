@@ -508,7 +508,7 @@ function goNext(p) { //this function is used to change the place you're in
             return goHall();
         }
         else {
-            INFO.innerHTML = "<p>ENTREZ PAR LA BONNE PORTE !!! >:(</p>";
+            INFO.innerHTML = "<p>ENTER THE RIGHT WAY !!! >:(</p>";
         }
     } //done
     else if (Image === "Photos/hall-global.jpg") {
