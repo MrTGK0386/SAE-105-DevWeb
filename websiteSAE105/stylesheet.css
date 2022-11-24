@@ -1,0 +1,35 @@
+html{
+    height: 100%;
+}
+body{
+    width: inherit;
+    min-height: 100%;
+    background-image: url("/captures/toutPropre.PNG");
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 5px;
+}
+
+.parent {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(240, 248, 255, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4.9px);
+    -webkit-backdrop-filter: blur(4.9px);
+}
+
+.child {
+    width: 348px;
+    height: 119px;
+}
+
