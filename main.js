@@ -360,8 +360,8 @@ function goHallD(){
 } // done
 function goLeftStair(){
     INFO.innerHTML = "<p>En passant par ici vous pouvez accéder</p>" +
-        "<p>A droite : vous pouvez accéder à l'espace de pause du hall</p>" +
-        "<p>Et en face de vous se trouve les espaces de cours du rez-de-chaussez</p>";
+        "<p>A droite : à l'espace de pause du hall</p>" +
+        "<p>Et en face : aux espaces de cours du rez-de-chaussez</p>";
     SCREEN.innerHTML = "<img src=\"Photos/left-stair.jpg\" id=\"image\" alt=\"A view below the stairs\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
