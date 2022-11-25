@@ -5,8 +5,8 @@ const TICK = 1000;
 
 //Misc variables
 const textFrontBadDoor = "ENTER THE RIGHT WAY !!!" //text when you try enter the exit door
-const textCofee = "Oh a cofee, GREAT !!" // text when you click on tje vending machine
-const textPiano = "You are now playing : Moonlight Sonata 3rd movement by Beethoven"
+const textCofee = "Oh a cofee, GREAT !!" // text when you click on the vending machine
+const textPiano = "You are now playing : Moonlight Sonata 3rd movement by Beethoven" // text when your" playing the songs
 const textDrum = "You are now playing : Song 2 by Blur"
 const textPercu = "You are now playing : Sympathy for the Devil by Rolling Stones"
 const textSynth = "You are now playing : Jump by Van Halen"
