@@ -5,26 +5,30 @@ const TICK = 1000;
 
 //Misc variables
 const textFrontBadDoor = "ENTER THE RIGHT WAY !!!" //text when you try enter the exit door
+const textSecretaria = "The secretary should not be accessed by student" // text when you try enter the secretery
+const textExtern = "It's too cold to go outside" // text when you exit by the break space
+const textCouloir = "This coridor leads to other classrooms" // text when you try to go too far away in the corridor
+const textEsca = "This door is closed" // text when you try to open the door of A stairs
 const textCofee = "Oh a cofee, GREAT !!" // text when you click on the vending machine
 const textPiano = "You are now playing : Moonlight Sonata 3rd movement by Beethoven" // text when your" playing the songs
 const textDrum = "You are now playing : Song 2 by Blur"
 const textPercu = "You are now playing : Sympathy for the Devil by Rolling Stones"
 const textSynth = "You are now playing : Jump by Van Halen"
-const textMaster = "You are now playing : La vériter by ZZXX MXT"
+const textMaster = "You are now playing : La vériter by ZZCC MXTP"
 let rebel = 0; //accumulator
 let piano = 0; //accumulator
 let drum = 0; //accumulator
 let percu = 0; //accumulator
 let synth = 0; //accumulator
 let master = 0; //accumulator
-let genius = []; //accumulator
-let explorator = []; //accumulator
+let genius = []; //array accumulator
+let explorator = []; //array accumulator
 let cofee = 0; //accumulator
-const Apiano = new Audio("Sounds/Piano.mp3");
-const Adrum = new Audio("Sounds/Drum.mp3");
-const Apercu = new Audio("Sounds/Percu.mp3");
-const Asynth = new Audio("Sounds/Synth.mp3");
-const Amaster = new Audio("Sounds/Master.mp3");
+const Apiano = new Audio("Sounds/Piano.mp3"); // audio files
+const Adrum = new Audio("Sounds/Drum.mp3"); // audio files
+const Apercu = new Audio("Sounds/Percu.mp3"); // audio files
+const Asynth = new Audio("Sounds/Synth.mp3"); // audio files
+const Amaster = new Audio("Sounds/Master.mp3"); // audio files
 
 //these are the function to warp to each place in the iut
 
@@ -145,6 +149,7 @@ function goCouloirBot(){
     SCREEN.innerHTML = "<img src=\"Photos/couloirBot.jpg\" id=\"image\" alt=\"A groundfloor coridor\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
+        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
         "\n" +
         "<style>\n" +
         "    #etienne {\n" +
@@ -158,6 +163,12 @@ function goCouloirBot(){
         "         left: 76%;\n" +
         "         width: 178px;\n" +
         "         height: 449px;\n" +
+        "    }\n" +
+        "    #julien {\n" +
+        "         top: 40%;\n" +
+        "         left: 44%;\n" +
+        "         width: 70px;\n" +
+        "         height: 80px;\n" +
         "</style>";
 } // done
 function goCouloirTop1(){
@@ -239,6 +250,7 @@ function goScene(){
         "<button onclick=\"Music(3)\" class=\"play\" id=\"percu\"></button>\n" +
         "<button onclick=\"Music(4)\" class=\"play\" id=\"synth\"></button>\n" +
         "<button onclick=\"Music(5)\" class=\"play\" id=\"master\"></button>\n" +
+        "<button onclick=\"Music(6)\" class=\"play\" id=\"pause\"></button>\n" +
         "\n" +
         "<style>\n" +
         "    #etienne {\n" +
@@ -274,6 +286,12 @@ function goScene(){
         "    #master {\n" +
         "        top: 50%;\n" +
         "        left: 47%;\n" +
+        "        width: 100px;\n" +
+        "        height: 100px;\n" +
+        "    }\n" +
+        "    #pause {\n" +
+        "        top: 1%;\n" +
+        "        left: 1%;\n" +
         "        width: 100px;\n" +
         "        height: 100px;\n" +
         "    }\n" +
@@ -375,6 +393,7 @@ function goHallPause(){
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
         "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
+        "<button onclick=\"goNext(4)\" class=\"hide\" id=\"nathan\"></button>\n" +
         "\n" +
         "<style>\n" +
         "    #etienne {\n" +
@@ -395,6 +414,12 @@ function goHallPause(){
         "        width: 342px;\n" +
         "        height: 92%;\n" +
         "    }\n" +
+        "    #nathan {\n" +
+        "        top: 30%;\n" +
+        "        left: 6%;\n" +
+        "        width: 205px;\n" +
+        "        height: 34%;\n" +
+        "     }\n" +
         "</style>";
 } //done
 function goHallD(){
@@ -544,6 +569,12 @@ function goTopStair(){
         "         width: 239px;\n" +
         "         height: 247px;\n" +
         "     }\n" +
+        "    #julien {\n" +
+        "         top: 15%;\n" +
+        "         left: 21%;\n" +
+        "         width: 140px;\n" +
+        "         height: 247px;\n" +
+        "     }\n" +
         "</style>";
 } // done
 function goFablab(){
@@ -627,15 +658,20 @@ function goNext(p) { //this function is used to change the place you're in
             return goLeftStair()
         }
         else {
-            rebel+=1;
+            INFO.innerHTML = "<p>"+textSecretaria+"</p>";
+            rebel++;
         }
     } // done
     else if (Image === "Photos/top-stairs.jpg") {
             if (p === 1) {
                 return goHallG();
             }
-            else {
+            else if (p === 2) {
                 return goCouloirTop1();
+            }
+            else {
+                rebel++;
+                INFO.innerHTML = "<p>"+textEsca+"</p>";
             }
     } // done
     else if (Image === "Photos/hall-pause.jpg") {
@@ -645,8 +681,12 @@ function goNext(p) { //this function is used to change the place you're in
             else if (p === 2) {
                 return goMachine();
             }
-            else {
+            else if (p === 3) {
                 return goBabyfoot();
+            }
+            else {
+                rebel++;
+                INFO.innerHTML = "<p>"+textExtern+"</p>";
             }
     } // done
     else if (Image === "Photos/machine.jpg") {
@@ -721,8 +761,12 @@ function goNext(p) { //this function is used to change the place you're in
         if (p === 1) {
             return goLeftStair();
         }
-        else {
+        else if (p === 2) {
             return goC0XX();
+        }
+        else {
+            rebel++;
+            INFO.innerHTML = "<p>"+textCouloir+"</p>";
         }
     } // done
     else if (Image === "Photos/C0XX.jpg") {
@@ -837,6 +881,7 @@ function Coffee(i){
 function Music(l){
     if (l === 1){
         Apiano.load();
+        Apiano.play();
         Adrum.pause();
         Apercu.pause();
         Asynth.pause();
@@ -848,6 +893,7 @@ function Music(l){
     else if (l === 2){
         Apiano.pause();
         Adrum.load();
+        Adrum.play();
         Apercu.pause();
         Asynth.pause();
         Amaster.pause();
@@ -859,6 +905,7 @@ function Music(l){
         Apiano.pause();
         Adrum.pause();
         Apercu.load();
+        Apercu.play();
         Asynth.pause();
         Amaster.pause();
         genius.push("c");
@@ -871,21 +918,31 @@ function Music(l){
         Adrum.pause();
         Apercu.pause();
         Asynth.load();
+        Asynth.play();
         Amaster.pause();
         genius.push("d");
         synth++;
         INFO.innerHTML = "<p>"+textSynth+"</p>";
+    }
+    else if (l === 5){
+        Apiano.pause();
+        Adrum.pause();
+        Apercu.pause();
+        Asynth.pause();
+        Amaster.load();
+        Amaster.play();
+        genius.push("e");
+        master++;
+        INFO.innerHTML = "<p>"+textMaster+"</p>";
     }
     else {
         Apiano.pause();
         Adrum.pause();
         Apercu.pause();
         Asynth.pause();
-        Amaster.load();
-        genius.push("e");
-        master++;
-        INFO.innerHTML = "<p>"+textMaster+"</p>";
+        Amaster.pause();
     }
+
 }
 
 //Run the function with a tick
@@ -903,25 +960,3 @@ function runLoop(){
 }
 
 setInterval(runLoop, TICK);
-
-
-
-/*
-
-else if (Image == "Photos/void.jpg") {
-    if (p == 1) {
-        INFO.innerHTML = "";
-        SCREEN.innerHTML = "";
-    } else if (p == 2) {
-        INFO.innerHTML = "";
-        SCREEN.innerHTML = "";
-    } else if (p == 3) {
-        INFO.innerHTML = "";
-        SCREEN.innerHTML = "";
-    } else {
-        INFO.innerHTML = "";
-        SCREEN.innerHTML = "";
-    }
-}
-
- */
