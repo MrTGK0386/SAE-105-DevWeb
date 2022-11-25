@@ -4,7 +4,6 @@ const SCREEN = document.getElementById("millieu");
 const TICK = 1000;
 
 // Misc variables
-
 const textFrontBadDoor = "ENTREZ PAR LA BONNE PORTE !!!" //text when you try enter the exit door
 const textCofee = "Oh un café, SUPER !!" // text when you click on tje vending machine
 const textPiano = "Vous êtes actuellement en train de jouer : Le troisième mouvement de la sonate au clair de Lune par Beethoven"
