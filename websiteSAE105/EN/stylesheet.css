@@ -69,6 +69,20 @@ body{
     max-width: 100%;
 }
 
+#etienne {
+    top: 71%;
+    left: 42%;
+    width: 150px;
+    height: 150px;
+}
+
+#fabio {
+    top: 71%;
+    left: 16%;
+    width: 150px;
+    height: 160px;
+}
+
 #droite {
     padding: 10px;
     display: flex;
@@ -142,3 +156,40 @@ body{
     width: inherit;
     font-family: Oswald,"Arial Black","Lucida Sans Unicode";
 }
+
+#piano {
+    top: 22%;
+    left: 41%;
+    width: 200px;
+    height: 200px;
+}
+#drum {
+    top: 22%;
+    right: 28%;
+    width: 75px;
+    height: 300px;
+}
+#percu {
+    top: 22%;
+    right: 5%;
+    width: 200px;
+    height: 200px;
+    }
+#synth {
+    top: 30%;
+    left: 15%;
+    width: 200px;
+    height: 200px;
+    }
+#master {
+    top: 50%;
+    left: 47%;
+    width: 100px;
+    height: 100px;
+    }
+#pause {
+    top: 1%;
+    left: 1%;
+    width: 100px;
+    height: 100px;
+    }

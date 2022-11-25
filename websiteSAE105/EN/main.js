@@ -36,16 +36,15 @@ function goAmphi(){
     explorator.push("a");
     INFO.innerHTML = "<p>That's where your patience will be put to the test</p>\n";
     SCREEN.innerHTML = "<img src=\"Photos/amphi.jpg\" id=\"image\" alt=\"Linus Torvald amphitheater\">\n" +
-        "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 100%;\n" +
-        "        height: 50px;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" ;
+    const e = document.getElementById("etienne");
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "0";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
+
 } //done
 function goAscenceurBot(){
     explorator.push("b");
@@ -53,50 +52,49 @@ function goAscenceurBot(){
     SCREEN.innerHTML = "<img src=\"Photos/ascenceurBot.jpg\" id=\"image\" alt=\"Elevator door\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 0;\n" +
-        "        left: 0;\n" +
-        "        width: 50px;\n" +
-        "        height: 100%;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "         top: 9%;\n" +
-        "         left: 30%;\n" +
-        "         width: 406px;\n" +
-        "         height: 482px;\n" +
-        "     }\n" +
-        "    #julien {\n" +
-        "        top: 0;\n" +
-        "        right: 0;\n" +
-        "        width: 50px;\n" +
-        "        height: 100%;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "0%";
+    e.style.bottom = "unset";
+    e.style.right = "unset";
+    e.style.left= "0";
+    e.style.width = "50px";
+    e.style.height = "100%";
+    const f = document.getElementById("fabio")
+    f.style.top = "9%";
+    f.style.bottom = "unset";
+    f.style.right = "unset";
+    f.style.left= "30%";
+    f.style.width = "406px";
+    f.style.height = "482px";
+    const j = document.getElementById("julien")
+    j.style.top = "0%";
+    j.style.bottom = "unset";
+    j.style.right = "15px";
+    j.style.left= "unset";
+    j.style.width = "50px";
+    j.style.height = "100%";
 } // done
 function goAscenceurTop(){
     explorator.push("c");
     INFO.innerHTML = "<p>Welcome to the last floor, here you will find all the IT workers , the RT classes and the FabLab</p>";
     SCREEN.innerHTML = "<img src=\"Photos/ascenceurTop.jpg\" id=\"image\" alt=\"Elevator door\">\n" +
         "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #fabio {\n" +
-        "         top: 9%;\n" +
-        "         left: 30%;\n" +
-        "         width: 406px;\n" +
-        "         height: 482px;\n" +
-        "     }\n" +
-        "    #julien {\n" +
-        "        top: 0;\n" +
-        "        right: 0;\n" +
-        "        width: 50px;\n" +
-        "        height: 100%;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n"
+    const f = document.getElementById("fabio")
+    f.style.top = "9%";
+    f.style.bottom = "unset";
+    f.style.right = "unset";
+    f.style.left= "30%";
+    f.style.width = "406px";
+    f.style.height = "482px";
+    const j = document.getElementById("julien")
+    j.style.top = "0%";
+    j.style.bottom = "unset";
+    j.style.right = "15px";
+    j.style.left= "unset";
+    j.style.width = "50px";
+    j.style.height = "100%";
 } // done
 function goBabyfoot(){
     explorator.push("d");
@@ -104,43 +102,41 @@ function goBabyfoot(){
     SCREEN.innerHTML = "<img src=\"Photos/babyfoot.jpg\" id=\"image\" alt=\"A foostable\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 100%;\n" +
-        "        height: 50px;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "         top: 0;\n" +
-        "         right: 0;\n" +
-        "         width: 50px;\n" +
-        "         height: 92%;\n" +
-        "     }\n" +
-        "    #julien {\n" +
-        "        top: 0;\n" +
-        "        left: 0;\n" +
-        "        width: 50px;\n" +
-        "        height: 92%;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
+    const f = document.getElementById("fabio")
+    f.style.top = "0";
+    f.style.bottom = "unset";
+    f.style.right = "15px";
+    f.style.left= "unset";
+    f.style.width = "50px";
+    f.style.height = "92%";
+    const j = document.getElementById("julien")
+    j.style.top = "0";
+    j.style.bottom = "unset";
+    j.style.right = "unset";
+    j.style.left= "0";
+    j.style.width = "50px";
+    j.style.height = "100%";
 } // done
 function goC0XX(){
     explorator.push("e");
     INFO.innerHTML = "<p>This class is a basic classroom, most of them are in groundfloor</p>";
     SCREEN.innerHTML = "<img src=\"Photos/C0XX.jpg\" id=\"image\" alt=\"A random groundfloor class \">\n" +
-        "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 100%;\n" +
-        "        height: 50px;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
 } // done
 function goCouloirBot(){
     explorator.push("f");
@@ -149,27 +145,28 @@ function goCouloirBot(){
     SCREEN.innerHTML = "<img src=\"Photos/couloirBot.jpg\" id=\"image\" alt=\"A groundfloor coridor\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 100%;\n" +
-        "        height: 50px;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "         top: 19%;\n" +
-        "         left: 76%;\n" +
-        "         width: 178px;\n" +
-        "         height: 449px;\n" +
-        "    }\n" +
-        "    #julien {\n" +
-        "         top: 40%;\n" +
-        "         left: 44%;\n" +
-        "         width: 70px;\n" +
-        "         height: 80px;\n" +
-        "</style>";
+        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "0";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
+    const f = document.getElementById("fabio")
+    f.style.top = "19%";
+    f.style.bottom = "unset";
+    f.style.right = "unset";
+    f.style.left= "76%%";
+    f.style.width = "178px";
+    f.style.height = "449px";
+    const j = document.getElementById("julien")
+    j.style.top = "40%";
+    j.style.bottom = "unset";
+    j.style.right = "unset";
+    j.style.left= "44%";
+    j.style.width = "70px";
+    j.style.height = "80px";
 } // done
 function goCouloirTop1(){
     explorator.push("g");
@@ -178,65 +175,63 @@ function goCouloirTop1(){
     SCREEN.innerHTML = "<img src=\"Photos/couloirTop1.jpg\" id=\"image\" alt=\"First floor's first corridor\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 100%;\n" +
-        "        height: 50px;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "         top: 39%;\n" +
-        "         left: 48%;\n" +
-        "         width: 57px;\n" +
-        "         height: 64px;\n" +
-        "     }\n" +
-        "    #julien {\n" +
-        "        top: 35%;\n" +
-        "        left: 42%;\n" +
-        "        width: 40px;\n" +
-        "        height: 19%;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
+    const f = document.getElementById("fabio")
+    f.style.top = "39%";
+    f.style.bottom = "unset";
+    f.style.right = "unset";
+    f.style.left= "48%";
+    f.style.width = "57px";
+    f.style.height = "64px";
+    const j = document.getElementById("julien")
+    j.style.top = "35%";
+    j.style.bottom = "unset";
+    j.style.right = "unset";
+    j.style.left= "42%";
+    j.style.width = "40px";
+    j.style.height = "19%";
 } // done
 function goCouloirTop2(){
     explorator.push("h");
     INFO.innerHTML = "<p>On your right, you'll find the technique classes : occupied most of the time by MMIs </p>";
     SCREEN.innerHTML = "<img src=\"Photos/couloirTop2.jpg\" id=\"image\" alt=\"First floor's second corridor\">\n" +
     "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
-    "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-    "\n" +
-    "<style>\n" +
-    "    #etienne {\n" +
-    "        top: 92%;\n" +
-    "        right: 0;\n" +
-    "        width: 100%;\n" +
-    "        height: 50px;\n" +
-    "    }\n" +
-    "    #fabio {\n" +
-    "         top: 17%;\n" +
-    "         left: 60%;\n" +
-    "         width: 59px;\n" +
-    "         height: 235px;\n" +
-    "</style>";
+    "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50%";
+    const f = document.getElementById("fabio")
+    f.style.top = "17%";
+    f.style.bottom = "unset";
+    f.style.right = "unset";
+    f.style.left= "60%";
+    f.style.width = "59px";
+    f.style.height = "235px";
 } // done
 function goD1XX(){
     explorator.push("i");
     INFO.innerHTML = "<p>This is a MMI's technique classroom</p> " +
         "<p>MMIs spends most of their course time in this type of classroom </p>";
     SCREEN.innerHTML = "<img src=\"Photos/D1XX.jpg\" id=\"image\" alt=\"A random tech class in the first floor\">\n" +
-        "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 100%;\n" +
-        "        height: 50px;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
 } // done
 function goScene(){
     explorator.push("j");
@@ -250,52 +245,14 @@ function goScene(){
         "<button onclick=\"Music(3)\" class=\"play\" id=\"percu\"></button>\n" +
         "<button onclick=\"Music(4)\" class=\"play\" id=\"synth\"></button>\n" +
         "<button onclick=\"Music(5)\" class=\"play\" id=\"master\"></button>\n" +
-        "<button onclick=\"Music(6)\" class=\"play\" id=\"pause\"><img src=\"Utility/pause.png\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 100%;\n" +
-        "        height: 50px;\n" +
-        "    }\n" +
-        "    #piano {\n" +
-        "        top: 22%;\n" +
-        "        left: 41%;\n" +
-        "        width: 200px;\n" +
-        "        height: 200px;\n" +
-        "    }\n" +
-        "    #drum {\n" +
-        "        top: 22%;\n" +
-        "        right: 28%;\n" +
-        "        width: 75px;\n" +
-        "        height: 300px;\n" +
-        "    }\n" +
-        "    #percu {\n" +
-        "        top: 22%;\n" +
-        "        right: 5%;\n" +
-        "        width: 200px;\n" +
-        "        height: 200px;\n" +
-        "    }\n" +
-        "    #synth {\n" +
-        "        top: 30%;\n" +
-        "        left: 15%;\n" +
-        "        width: 200px;\n" +
-        "        height: 200px;\n" +
-        "    }\n" +
-        "    #master {\n" +
-        "        top: 50%;\n" +
-        "        left: 47%;\n" +
-        "        width: 100px;\n" +
-        "        height: 100px;\n" +
-        "    }\n" +
-        "    #pause {\n" +
-        "        top: 1%;\n" +
-        "        left: 1%;\n" +
-        "        width: 100px;\n" +
-        "        height: 100px;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"Music(6)\" class=\"play\" id=\"pause\"><img src=\"Utility/pause.png\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
 } //done
 function goFront(){
     explorator.push("k");
@@ -303,21 +260,21 @@ function goFront(){
         "<p>Come in, don't be shy</p>\n";
     SCREEN.innerHTML = "<img src=\"Photos/FrontIUT.jpg\" id=\"image\" alt=\"Front of the IUT\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
-        "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 71%;\n" +
-        "        left: 42%;\n" +
-        "        width: 150px;\n" +
-        "        height: 150px;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "        top: 71%;\n" +
-        "        left: 16%;\n" +
-        "        width: 150px;\n" +
-        "        height: 160px;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "71%";
+    e.style.bottom = "unset";
+    e.style.right = "unset";
+    e.style.left= "42%";
+    e.style.width = "150px";
+    e.style.height = "150px";
+    const f = document.getElementById("fabio")
+    f.style.top = "71%";
+    f.style.bottom = "unset";
+    f.style.right = "unset";
+    f.style.left= "16%";
+    f.style.width = "150px";
+    f.style.height = "160px";
 } //done
 function goHall(){
     explorator.push("l");
@@ -326,27 +283,28 @@ function goHall(){
     SCREEN.innerHTML = "<img src=\"Photos/hall-global.jpg\" id=\"image\" alt=\"IUT entrance hub\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "    top: 92%;\n" +
-        "    right: 0;\n" +
-        "    width: 100%;\n" +
-        "    height: 50px;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "        top: 0;\n" +
-        "        right: 0;\n" +
-        "        width: 350px;\n" +
-        "        height: 92%;\n" +
-        "    }\n" +
-        "    #julien {\n" +
-        "        top: 0;\n" +
-        "        left: 0;\n" +
-        "        width: 350px;\n" +
-        "        height: 92%;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
+    const f = document.getElementById("fabio")
+    f.style.top = "0";
+    f.style.bottom = "unset";
+    f.style.right = "15px";
+    f.style.left= "unset";
+    f.style.width = "350px";
+    f.style.height = "92%";
+    const j = document.getElementById("julien")
+    j.style.top = "0%";
+    j.style.bottom = "unset";
+    j.style.right = "unset";
+    j.style.left= "0";
+    j.style.width = "350px";
+    j.style.height = "92%";
 } //done
 function goHallG(){
     explorator.push("m");
@@ -357,33 +315,35 @@ function goHallG(){
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
         "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "<button onclick=\"goNext(4)\" class=\"hide\" id=\"nathan\"></button>\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        bottom: 1%;\n" +
-        "        right: 0;\n" +
-        "        width: 275px;\n" +
-        "        height: 75%;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "        top: 18%;\n" +
-        "        left: 45%;\n" +
-        "        width: 100px;\n" +
-        "        height: 125px;\n" +
-        "    }\n" +
-        "    #julien {\n" +
-        "        top: 42%;\n" +
-        "        left: 20%;\n" +
-        "        width: 92px;\n" +
-        "        height: 294px;\n" +
-        "    }\n" +
-        "    #nathan {\n" +
-        "        top: 40%;\n" +
-        "        left: 3%;\n" +
-        "        width: 134px;\n" +
-        "        height: 322px;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(4)\" class=\"hide\" id=\"nathan\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "1%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "275px";
+    e.style.height = "75%";
+    const f = document.getElementById("fabio")
+    f.style.top = "18%";
+    f.style.bottom = "unset";
+    f.style.right = "unset";
+    f.style.left= "45%";
+    f.style.width = "100px";
+    f.style.height = "125px";
+    const j = document.getElementById("julien")
+    j.style.top = "42%";
+    j.style.bottom = "unset";
+    j.style.right = "unset";
+    j.style.left= "20%";
+    j.style.width = "92px";
+    j.style.height = "294px";
+    const n = document.getElementById("nathan")
+    n.style.top = "40%";
+    n.style.bottom = "unset";
+    n.style.right = "unset";
+    n.style.left= "3%";
+    n.style.width = "134px";
+    n.style.height = "322px";
 } //done
 function goHallPause(){
     explorator.push("n");
@@ -393,34 +353,35 @@ function goHallPause(){
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
         "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "<button onclick=\"goNext(4)\" class=\"hide\" id=\"nathan\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 100%;\n" +
-        "        height: 50px;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "         top: 25%;\n" +
-        "         left: 60%;\n" +
-        "         width: 200px;\n" +
-        "         height: 400px;\n" +
-        "     }\n" +
-        "    #julien {\n" +
-        "        top: 0;\n" +
-        "        left: 0;\n" +
-        "        width: 342px;\n" +
-        "        height: 92%;\n" +
-        "    }\n" +
-        "    #nathan {\n" +
-        "        top: 30%;\n" +
-        "        left: 6%;\n" +
-        "        width: 205px;\n" +
-        "        height: 34%;\n" +
-        "     }\n" +
-        "</style>";
+        "<button onclick=\"goNext(4)\" class=\"hide\" id=\"nathan\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
+    const f = document.getElementById("fabio")
+    f.style.top = "25%";
+    f.style.bottom = "unset";
+    f.style.right = "unset";
+    f.style.left= "60%";
+    f.style.width = "200px";
+    f.style.height = "400px";
+    const j = document.getElementById("julien")
+    j.style.top = "0";
+    j.style.bottom = "unset";
+    j.style.right = "unset";
+    j.style.left= "0";
+    j.style.width = "50px";
+    j.style.height = "92%";
+    const n = document.getElementById("nathan")
+    n.style.top = "30%";
+    n.style.bottom = "unset";
+    n.style.right = "unset";
+    n.style.left= "6%";
+    n.style.width = "205px";
+    n.style.height = "34%";
 } //done
 function goHallD(){
     explorator.push("o");
@@ -431,33 +392,35 @@ function goHallD(){
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
         "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "<button onclick=\"goNext(4)\" class=\"hide\" id=\"nathan\"></button>\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 100%;\n" +
-        "        height: 50px;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "        top: 0;\n" +
-        "        right:0;\n" +
-        "        width: 50px;\n" +
-        "        height: 92%;\n" +
-        "    }\n" +
-        "    #julien {\n" +
-        "        top: 29%;\n" +
-        "        left: 56%;\n" +
-        "        width: 160px;\n" +
-        "        height: 210px;\n" +
-        "    }\n" +
-        "    #nathan {\n" +
-        "        top: 20%;\n" +
-        "        left: 16%;\n" +
-        "        width: 267px;\n" +
-        "        height: 369px;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(4)\" class=\"hide\" id=\"nathan\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
+    const f = document.getElementById("fabio")
+    f.style.top = "0";
+    f.style.bottom = "unset";
+    f.style.right = "15px";
+    f.style.left= "unset";
+    f.style.width = "50px";
+    f.style.height = "92%";
+    const j = document.getElementById("julien")
+    j.style.top = "29%";
+    j.style.bottom = "unset";
+    j.style.right = "unset";
+    j.style.left= "56%";
+    j.style.width = "160px";
+    j.style.height = "210px";
+    const n = document.getElementById("nathan")
+    n.style.top = "20%";
+    n.style.bottom = "unset";
+    n.style.right = "unset";
+    n.style.left= "16%";
+    n.style.width = "267px";
+    n.style.height = "369px";
 } // done
 function goLeftStair(){
     explorator.push("p");
@@ -467,27 +430,28 @@ function goLeftStair(){
     SCREEN.innerHTML = "<img src=\"Photos/left-stair.jpg\" id=\"image\" alt=\"A view below the stairs\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 100%;\n" +
-        "        height: 50px;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "        top: 46%;\n" +
-        "        left: 41%;\n" +
-        "        width: 100px;\n" +
-        "        height: 120px;\n" +
-        "    }\n" +
-        "    #julien {\n" +
-        "        top: 0;\n" +
-        "        right: 0;\n" +
-        "        width: 50px;\n" +
-        "        height: 92%;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
+    const f = document.getElementById("fabio")
+    f.style.top = "46%";
+    f.style.bottom = "unset";
+    f.style.right = "unset";
+    f.style.left= "41%";
+    f.style.width = "100px";
+    f.style.height = "120px";
+    const j = document.getElementById("julien")
+    j.style.top = "0";
+    j.style.bottom = "unset";
+    j.style.right = "15px";
+    j.style.left= "unset";
+    j.style.width = "50px";
+    j.style.height = "92%";
 } // done
 function goMachine(){
     explorator.push("q");
@@ -496,28 +460,28 @@ function goMachine(){
     SCREEN.innerHTML = "<img src=\"Photos/machine.jpg\" id=\"image\" alt=\"Some vendings machine\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 100%;\n" +
-        "        height: 50px;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "         top: 0;\n" +
-        "         right: 0;\n" +
-        "         width: 50px;\n" +
-        "         height: 92%;\n" +
-        "     }\n" +
-        "    #julien {\n" +
-        "        top: 15%;\n" +
-        "        left: 6%;\n" +
-        "        width: 756px;\n" +
-        "        height: 73%;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
+    const f = document.getElementById("fabio")
+    f.style.top = "0";
+    f.style.bottom = "unset";
+    f.style.right = "15px";
+    f.style.left= "unset";
+    f.style.width = "50px";
+    f.style.height = "92%";
+    const j = document.getElementById("julien")
+    j.style.top = "15%";
+    j.style.bottom = "unset";
+    j.style.right = "unset";
+    j.style.left= "6%";
+    j.style.width = "756px";
+    j.style.height = "73%";
 } // done
 function goSecretaria(){
     explorator.push("r");
@@ -525,28 +489,28 @@ function goSecretaria(){
     SCREEN.innerHTML = "<img src=\"Photos/secretaria-doorFront.jpg\" id=\"image\" alt=\"Secretary's offices\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 100%;\n" +
-        "        height: 50px;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "         top: 0;\n" +
-        "         right: 0;\n" +
-        "         width: 200px;\n" +
-        "         height: 92%;\n" +
-        "     }\n" +
-        "    #julien {\n" +
-        "        top: 5%;\n" +
-        "        left: 13%;\n" +
-        "        width: 409px;\n" +
-        "        height: 75%;\n" +
-        "    }\n" +
-        "</style>";
+        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
+    const f = document.getElementById("fabio")
+    f.style.top = "0";
+    f.style.bottom = "unset";
+    f.style.right = "15px";
+    f.style.left= "unset";
+    f.style.width = "200px";
+    f.style.height = "92%";
+    const j = document.getElementById("julien")
+    j.style.top = "5%";
+    j.style.bottom = "unset";
+    j.style.right = "unset";
+    j.style.left= "13%";
+    j.style.width = "409px";
+    j.style.height = "75%";
 } // done
 function goTopStair(){
     explorator.push("s");
@@ -554,28 +518,28 @@ function goTopStair(){
     SCREEN.innerHTML = "<img src=\"Photos/top-stairs.jpg\" id=\"image\" alt=\"The top of the stairs\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 60%;\n" +
-        "        height: 50px;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "         top: 27%;\n" +
-        "         left: 51%;\n" +
-        "         width: 239px;\n" +
-        "         height: 247px;\n" +
-        "     }\n" +
-        "    #julien {\n" +
-        "         top: 15%;\n" +
-        "         left: 21%;\n" +
-        "         width: 140px;\n" +
-        "         height: 247px;\n" +
-        "     }\n" +
-        "</style>";
+        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "60%";
+    e.style.height = "50px";
+    const f = document.getElementById("fabio")
+    f.style.top = "27%";
+    f.style.bottom = "unset";
+    f.style.right = "unset";
+    f.style.left= "51%";
+    f.style.width = "239px";
+    f.style.height = "247px";
+    const j = document.getElementById("julien")
+    j.style.top = "15%";
+    j.style.bottom = "unset";
+    j.style.right = "unset";
+    j.style.left= "21%";
+    j.style.width = "140px";
+    j.style.height = "247px";
 } // done
 function goFablab(){
     explorator.push("t");
@@ -584,16 +548,14 @@ function goFablab(){
     SCREEN.innerHTML = "<img src=\"Photos/fablab.jpg\" id=\"image\" alt=\"The IUT's fablab\">\n" +
         "<button onclick=\"goNext(1)\" class=\"hide\" id=\"etienne\"></button>\n" +
         "<button onclick=\"goNext(2)\" class=\"hide\" id=\"fabio\"></button>\n" +
-        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n" +
-        "\n" +
-        "<style>\n" +
-        "    #etienne {\n" +
-        "        top: 92%;\n" +
-        "        right: 0;\n" +
-        "        width: 100%;\n" +
-        "        height: 50px;\n" +
-        "    }\n"
-        "</style>";
+        "<button onclick=\"goNext(3)\" class=\"hide\" id=\"julien\"></button>\n"
+    const e = document.getElementById("etienne")
+    e.style.top = "92%";
+    e.style.bottom = "unset";
+    e.style.right = "15px";
+    e.style.left= "unset";
+    e.style.width = "100%";
+    e.style.height = "50px";
 } // done
 
 // goNext function is used when moving in the IUT
