@@ -250,7 +250,7 @@ function goScene(){
         "<button onclick=\"Music(3)\" class=\"play\" id=\"percu\"></button>\n" +
         "<button onclick=\"Music(4)\" class=\"play\" id=\"synth\"></button>\n" +
         "<button onclick=\"Music(5)\" class=\"play\" id=\"master\"></button>\n" +
-        "<button onclick=\"Music(6)\" class=\"play\" id=\"pause\"></button>\n" +
+        "<button onclick=\"Music(6)\" class=\"play\" id=\"pause\"><img src=\"Utility/pause.png\"></button>\n" +
         "\n" +
         "<style>\n" +
         "    #etienne {\n" +
