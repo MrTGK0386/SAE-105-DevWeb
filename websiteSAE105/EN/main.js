@@ -157,7 +157,7 @@ function goCouloirBot(){
     f.style.top = "19%";
     f.style.bottom = "unset";
     f.style.right = "unset";
-    f.style.left= "76%%";
+    f.style.left= "76%";
     f.style.width = "178px";
     f.style.height = "449px";
     const j = document.getElementById("julien")
