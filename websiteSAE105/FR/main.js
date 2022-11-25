@@ -562,21 +562,9 @@ function goFablab(){
         "        right: 0;\n" +
         "        width: 100%;\n" +
         "        height: 50px;\n" +
-        "    }\n" +
-        "    #fabio {\n" +
-        "         top: 25%;\n" +
-        "         left: 60%;\n" +
-        "         width: 200px;\n" +
-        "         height: 400px;\n" +
-        "     }\n" +
-        "    #julien {\n" +
-        "        top: 0;\n" +
-        "        left: 0;\n" +
-        "        width: 342px;\n" +
-        "        height: 92%;\n" +
-        "    }\n" +
+        "    }\n"
         "</style>";
-} // a faire
+} // done
 
 // goNext function is used when moving in the IUT
 
@@ -835,8 +823,8 @@ function Explorator(arr){
         arr.includes("p") &&
         arr.includes("q") &&
         arr.includes("r") &&
-        arr.includes("s") )//&&
-        //arr.includes("t"))
+        arr.includes("s") &&
+        arr.includes("t"))
         {
         getSucces("8")
     }
